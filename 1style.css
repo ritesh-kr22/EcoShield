@@ -4,7 +4,7 @@
 }
 body {
     background-image: 
-        url(blob_https___www.photoroom),
+        url(hand_earth.png),
         linear-gradient(180deg, #A9D8DD 0%, #92C9D1 100%);
 
         background-position: 50% 100px, 0 0; 
@@ -106,11 +106,11 @@ h2 a:hover {
     background-color: #fff5f5; /* Light warm tint */
     border-color: #ff4500;    /* Fire orange border */
     transform: translateY(-5px); /* Lifts the card up */
-    box-shadow: 0 10px 10px rgb(178, 77, 0); /* Adds depth */
+    box-shadow: 0 10px 10px rgb(203, 93, 10); /* Adds depth */
 }
 .glo-temp:active{
     transform: translateY(1px);
-    box-shadow: 0 10px 10px rgb(255, 124, 23);
+    box-shadow: 0 10px 10px rgb(246, 124, 31);
 }
 
 .sea-l{
@@ -218,27 +218,107 @@ h2 a:hover {
     background-color: #fff5f5; /* Light warm tint */
     border-color: #ff4500;    /* Fire orange border */
     transform: translateY(-5px); /* Lifts the card up */
-    box-shadow: 0 10px 10px rgb(116, 75, 0); /* Adds depth */
+    box-shadow: 0 10px 10px rgb(145, 94, 0); /* Adds depth */
 }
 .aqi:active{
     transform: translateY(1px);
     box-shadow: 0 10px 10px rgb(188, 119, 0);
 }
+.df{
+    background-image: url(Deforestation.png);
+    background-size: 1180px; /* Ensures the image covers the entire element area */
+    background-position-y: center; /* Centers the image within the element */
+    background-position-x:-500px; /* Centers the image within the element */
+    background-repeat: no-repeat;
+    width: 50%;
+    max-width: 600px;
+    height: 15%;
+    min-height: 150px;
+    border-radius: 25px;
+    margin-left: 6%;
+    transition: all 0.3s ease;
+}
+.df h1{
+    color: #B68B5E;
+}
+.df p{
+    color: #C8A47C;
+    padding-left: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: large;
+    text-shadow: 1px 1px 1px #000000;
+
+}
+.df:hover {
+    background-color: #fff5f5; /* Light warm tint */
+    border-color: #ff4500;    /* Fire orange border */
+    transform: translateY(-5px); /* Lifts the card up */
+    box-shadow: 0 10px 10px rgb(64, 42, 0); /* Adds depth */
+}
+.df:active{
+    transform: translateY(1px);
+    box-shadow: 0 10px 10px rgb(147, 98, 15);
+}
+
+/* 🏔️ Glacier Melt(__Ton/yr) */
+.l4{
+    display: flex;
+    flex-direction: column;
+}
+.ro{
+    display: flexbox;
+    justify-content: center;
+}
 
 
+#data {
+    display: flex;
+    flex-direction: column; /* Stacks the rows vertically */
+    gap: 10px;
+    color: #1f4145;
+    background-color: #5c979792;
+    border: 2px solid rgb(70, 136, 125);
+    border-radius: 20px;
+    width: 80%;
+    padding-bottom: 20px;
+    margin: 10%;
+}
+#data h2{
+    display: flex;
+    justify-content: center;
+    color:#2a6a71;
+    font-size: 50px;
+}
+.row {
+    display: flex; /* Aligns the <h3>s or <p>s horizontally */
+    justify-content: space-between; /* Spreads them across the row */
+    border-bottom: 1px solid #49544b; /* Optional: adds a divider line */
+    padding: 10px;
+
+}
+.row h3, .row p {
+    flex: 1; /*Forces each item to take up exactly 1/3 of the row */ 
+    margin: 0;
+    text-align: left;
+}
+.row h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+.row p{
+    /* font-weight: bold; */
+    font-size: 30px;
+}
 
 /* login code */
 form{
     background-color: rgba(255, 235, 205, 0.547);
-    /* margin: 30%;
-    position: relative; */
-    /* display: grid;
-    place-items: center; /* Centers horizontally and vertically */
-    /* height: 33%; Example: Centers in the full viewport height */
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%, -0%); /* Shifts the element back by half its own size */
+    transform: translate(-50%, -0%); 
     padding: 20px;
     border-radius: 20px;
 } 
@@ -258,8 +338,6 @@ div+button{
     padding: 10px;
 }
 .form-footer{
-    /* position:relative ;
-    left: 40%;     */
     padding-top: 30px;
 }
 span a{
